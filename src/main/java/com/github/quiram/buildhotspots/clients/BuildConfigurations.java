@@ -6,12 +6,12 @@ import java.util.List;
 public class BuildConfigurations {
     private List<BuildConfiguration> buildConfigurations = new ArrayList<>();
 
-    public void add(BuildConfiguration buildConfiguration) {
-        buildConfigurations.add(buildConfiguration);
-    }
-
     public BuildConfiguration get(int i) {
         return buildConfigurations.get(i);
+    }
+
+    public void add(BuildConfiguration buildConfiguration) {
+        buildConfigurations.add(buildConfiguration);
     }
 
     public int size() {
