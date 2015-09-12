@@ -27,4 +27,8 @@ public class BuildConfiguration {
         buildConfigurations.add(buildConfiguration);
         return true;
     }
+
+    public boolean dependsOn(BuildConfiguration buildConfiguration) {
+        return buildConfigurations.contains(buildConfiguration);
+    }
 }
