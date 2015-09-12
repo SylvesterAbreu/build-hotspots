@@ -49,13 +49,13 @@ public class JenkinsClientTest {
     }
 
     @Test
-    public void testGetOldestBuildNumberForDatasetsService() {
+    public void testGetOldestBuildNumberForDataSetsService() {
         int buildNumber = jenkinsClient.getOldestBuildNumber(DATASETS_SERVICE);
         assertThat(buildNumber).isEqualTo(DATASETS_SERVICE_OLDEST_BUILD_NUMBER);
     }
 
     @Test
-    public void testGetOldestBuildNumberForDatasetsApi() {
+    public void testGetOldestBuildNumberForDataSetsApi() {
         final String DATASETS_API = "datasets-api";
         int oldestBuildNumber = 3;
         mockOldestBuildNumber(DATASETS_API, oldestBuildNumber);
@@ -64,7 +64,7 @@ public class JenkinsClientTest {
     }
 
     @Test
-    public void testGetDateOfOldestAvailableBuildFromDatasetsService() {
+    public void testGetDateOfOldestAvailableBuildFromDataSetsService() {
         String jobName = DATASETS_SERVICE;
         String oldestBuildDatetime = mockDateOfBuild(jobName, DATASETS_SERVICE_OLDEST_BUILD_NUMBER);
 
